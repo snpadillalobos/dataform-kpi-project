@@ -1,0 +1,14 @@
+{
+  "name": "dataform-local-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "dataform build",
+    "compile": "dataform compile",
+    "run": "dataform run"
+  },
+  "devDependencies": {
+    "@dataform/cli": "^3.0.0",
+    "@dataform/core": "^3.0.0"
+  }
+}
+

@@ -1,0 +1,10 @@
+config {
+  type: "table"
+}
+
+SELECT
+  fecha,
+  SUM(monto) AS ingresos
+FROM
+  ${ref("ventas_raw")}
+GROUP BY fecha

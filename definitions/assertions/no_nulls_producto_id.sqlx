@@ -1,0 +1,11 @@
+config {
+  type: "assertion"
+}
+
+SELECT
+  *
+FROM
+  ${ref("ventas_diarias")}
+WHERE
+  producto_id IS NULL
+

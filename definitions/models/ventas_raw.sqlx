@@ -1,0 +1,10 @@
+config {
+  type: "table",
+  description: "Tabla de datos crudos simulada"
+}
+
+SELECT
+  1 AS producto_id,
+  "2025-01-01" AS fecha_venta,
+  1000 AS monto,
+  "cliente_001" AS cliente_id

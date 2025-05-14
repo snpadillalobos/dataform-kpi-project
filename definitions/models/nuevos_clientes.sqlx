@@ -1,0 +1,12 @@
+config {
+  type: "incremental",
+  uniqueKey: ["cliente_id"]
+}
+
+SELECT
+  cliente_id,
+  MIN(DATE(fecha_venta)) AS primera_compra
+FROM
+  ${ref("ventas_raw")}
+GROUP BY cliente_id
+

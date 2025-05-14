@@ -1,0 +1,12 @@
+config {
+  type: "table",
+  description: "Tabla de ventas diarias agregadas por producto y fecha"
+}
+
+SELECT
+  producto_id,
+  DATE(fecha_venta) AS fecha,
+  SUM(monto) AS total_ventas
+FROM
+  ${ref("ventas_raw")}
+GROUP BY 1, 2
