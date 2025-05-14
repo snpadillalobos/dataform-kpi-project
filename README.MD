@@ -2,6 +2,8 @@
 
 Este proyecto simula un flujo de transformación de datos en **Dataform CLI** de forma local, usando SQL modular, assertions de calidad y estructuras por capas tipo **bronze/silver/gold**.
 
+![DAG de Dataform](dataform_dag.png)
+
 ## Tecnologías usadas
 - Node.js + NPM
 - Dataform CLI
